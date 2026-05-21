@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Violin Fingering</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'fingering/style.css' %}">
+  <script src="https://cdn.jsdelivr.net/npm/vexflow@4/build/cjs/vexflow.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <span class="logo">🎻</span>
+    <div>
+      <h1>Violin Fingering</h1>
+      <p class="subtitle">Optimal fingering via dynamic programming</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ── LEFT PANEL ── -->
+  <section class="panel panel-input">
+
+    <details class="sidebar-section" open>
+      <summary class="sidebar-section-title">Examples</summary>
+      <div class="sidebar-section-body">
+        {% for group in example_groups %}
+        <div class="example-group">
+          <div class="example-group-label">{{ group.label }}</div>
+          <div class="example-grid{% if group.cols == 2 %} example-grid-2col{% endif %}">
+            {% for key, ex in group.items %}
+            <button class="example-btn{% if group.label == 'Pieces' %} example-btn-piece{% endif %}" data-key="{{ key }}">
+              <span class="example-btn-label">{{ ex.label }}</span>
+              {% if group.label == 'Pieces' %}<span class="example-btn-meta">{{ ex.bpm }} BPM</span>{% endif %}
+            </button>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </details>
+
+    <details class="sidebar-section" id="section-search">
+      <summary class="sidebar-section-title">Search bitmidi</summary>
+      <div class="sidebar-section-body">
+        <div class="search-row">
+          <input type="text" id="song-search-input" class="search-input" placeholder="e.g. waltz, canon…">
+          <button id="song-search-btn" class="search-go-btn">Go</button>
+        </div>
+        <div id="search-status" class="search-status"></div>
+        <div id="search-results" class="search-results"></div>
+      </div>
+    </details>
+
+    <details class="sidebar-section" id="section-recent" style="display:none" open>
+      <summary class="sidebar-section-title">Recently Played</summary>
+      <div class="sidebar-section-body" id="recent-list"></div>
+    </details>
+
+    <details class="sidebar-section" id="section-sequence">
+      <summary class="sidebar-section-title">Custom Sequence</summary>
+      <div class="sidebar-section-body">
+        <p class="hint">One note per line: <code>MIDI_PITCH DURATION</code> (use <code>rest DURATION</code> for rests). Pitch 55=G3, 69=A4, 76=E5.</p>
+        <textarea id="sequence-input" rows="8" spellcheck="false">55 1
+57 1
+59 1
+60 1
+62 1
+64 1
+66 1
+67 1</textarea>
+      </div>
+    </details>
+
+    <details class="sidebar-section" open>
+      <summary class="sidebar-section-title">Cost Weights</summary>
+      <div class="sidebar-section-body">
+        <div class="weights-grid">
+
+          <div class="weight-row">
+            <div class="weight-header">
+              <span class="weight-name">String crossing</span>
+              <span class="weight-val" id="val-sc">10</span>
+            </div>
+            <input type="range" id="w-string-crossing" min="0" max="30" step="0.5" value="10">
+            <details class="weight-tip">
+              <summary>higher → fewer string crossings</summary>
+              <p>Cost added each time the bow moves to a different string. Higher → solver hugs one string; lower → freely hops strings for shorter finger stretches.</p>
+            </details>
+          </div>
+
+          <div class="weight-row">
+            <div class="weight-header">
+              <span class="weight-name">Position shift</span>
+              <span class="weight-val" id="val-ps">3</span>
+            </div>
+            <input type="range" id="w-position-shift" min="0" max="15" step="0.5" value="3">
+            <details class="weight-tip">
+              <summary>higher → stays in position</summary>
+              <p>Cost per semitone of hand travel up or down the neck. Higher → fewer large leaps; lower → allows distant positions for cleaner string choices.</p>
+            </details>
+          </div>
+
+          <div class="weight-row">
+            <div class="weight-header">
+              <span class="weight-name">High position</span>
+              <span class="weight-val" id="val-hp">0.3</span>
+            </div>
+            <input type="range" id="w-high-position" min="0" max="2" step="0.05" value="0.3">
+            <details class="weight-tip">
+              <summary>higher → prefers low neck</summary>
+              <p>Cost proportional to how far up the neck the hand sits. Higher → favours 1st–3rd position (easier for most players); lower → freely uses upper positions.</p>
+            </details>
+          </div>
+
+          <div class="weight-row">
+            <div class="weight-header">
+              <span class="weight-name">Pinky penalty</span>
+              <span class="weight-val" id="val-pk">1</span>
+            </div>
+            <input type="range" id="w-pinky" min="0" max="5" step="0.5" value="1">
+            <details class="weight-tip">
+              <summary>higher → avoids pinky</summary>
+              <p>Extra cost whenever the pinky (4th finger) is assigned. Higher → solver avoids demanding stretches; lower → pinky shares load evenly with other fingers.</p>
+            </details>
+          </div>
+
+          <div class="weight-row">
+            <div class="weight-header">
+              <span class="weight-name">Open string</span>
+              <span class="weight-val" id="val-os">-2</span>
+            </div>
+            <input type="range" id="w-open-string" min="-10" max="10" step="0.5" value="-2">
+            <details class="weight-tip">
+              <summary>higher → avoids open strings</summary>
+              <p>Negative → favours open strings (resonant tone, bow hand free to shift). Positive → avoids open strings (useful for continuous legato or vibrato throughout).</p>
+            </details>
+          </div>
+
+          <div class="weight-row">
+            <div class="weight-header">
+              <span class="weight-name">Unconventional pos</span>
+              <span class="weight-val" id="val-uc">4</span>
+            </div>
+            <input type="range" id="w-unconventional" min="0" max="10" step="0.5" value="4">
+            <details class="weight-tip">
+              <summary>higher → standard positions only</summary>
+              <p>Penalty for half-positions (1½, 2½, …). Higher → sticks to standard 1st, 3rd, 5th, 7th positions; lower → allows any position for finer pitch control.</p>
+            </details>
+          </div>
+
+        </div>
+      </div>
+    </details>
+
+    <label class="reverse-label">
+      <input type="checkbox" id="reverse-toggle">
+      Solve in reverse
+    </label>
+    <button id="solve-btn" class="solve-btn">Solve Fingering</button>
+    <div id="error-msg" class="error-msg hidden"></div>
+  </section>
+
+  <!-- ── RIGHT PANEL ── -->
+  <section class="panel panel-output">
+    <div id="placeholder" class="placeholder">
+      <div class="placeholder-icon">🎵</div>
+      <p>Enter a note sequence and click <strong>Solve Fingering</strong></p>
+    </div>
+
+    <div id="results" class="hidden">
+
+      <!-- ── NOTE VIEWER ── -->
+      <div class="nv-wrap results-section">
+
+        <!-- Scrollable strip of note cards -->
+        <div class="nv-strip-row">
+          <button class="nv-arrow" id="nv-prev" title="Previous">&#8249;</button>
+          <div class="nv-strip-scroll"><div class="nv-strip" id="nv-strip"></div></div>
+          <button class="nv-arrow" id="nv-next" title="Next">&#8250;</button>
+        </div>
+
+        <!-- Single-note neck + info -->
+        <div class="nv-main">
+          <div class="nv-info" id="nv-info">
+            <div class="nv-note-top">
+              <div class="nv-note-name" id="nv-note-name">—</div>
+            </div>
+            <div class="nv-note-bottom">
+              <div class="nv-string" id="nv-string"></div>
+              <div class="nv-pos-finger" id="nv-pos-finger"></div>
+              <div class="nv-flags" id="nv-flags"></div>
+            </div>
+          </div>
+          <div class="nv-neck-scroll">
+            <svg id="fingerboard-svg" width="100%" height="150"></svg>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── MOVING STAFF ── -->
+      <div class="staff-card results-section">
+        <div id="staff-container"></div>
+      </div>
+
+      <!-- ── SEEK BAR ── -->
+      <div class="seek-row results-section">
+        <span id="seek-current" class="seek-pos">#1</span>
+        <input type="range" id="seek-slider" class="seek-slider" min="0" max="0" step="1" value="0">
+        <span id="seek-total" class="seek-pos">/ 1</span>
+      </div>
+
+      <!-- ── PLAYBACK + STATS ── -->
+      <div class="toolbar-row results-section">
+        <button id="skip-back-btn"  class="skip-btn" title="Back 10 notes">&#171;</button>
+        <button id="rewind-btn"     class="skip-btn" title="Previous note">&#8249;</button>
+        <button id="play-btn"  class="play-btn"  title="Play">&#9654;</button>
+        <button id="pause-btn" class="pause-btn hidden" title="Pause">&#9646;&#9646;</button>
+        <button id="forward-btn"    class="skip-btn" title="Next note">&#8250;</button>
+        <button id="skip-fwd-btn"   class="skip-btn" title="Forward 10 notes">&#187;</button>
+        <button id="stop-btn"  class="stop-btn hidden" title="Stop from beginning">&#9632;</button>
+        <label class="tempo-label">BPM <span id="val-bpm">72</span>
+          <input type="range" id="tempo-slider" min="10" max="240" step="1" value="72">
+        </label>
+        <label class="tempo-label">Vol <span id="val-vol">70</span>%
+          <input type="range" id="vol-slider" min="0" max="100" step="1" value="70">
+        </label>
+      </div>
+
+      <!-- ── STATS ── -->
+      <div id="stats-bar" class="stats-bar results-section"></div>
+
+      <!-- Optimization stats -->
+      <details class="opt-card results-section" open>
+        <summary>
+          <span class="opt-summary-label">Optimization</span>
+          <span class="opt-summary-meta" id="opt-summary-meta"></span>
+        </summary>
+        <div class="opt-grid" id="opt-grid"></div>
+      </details>
+
+      <!-- hidden list still used for playback sync -->
+      <ol id="note-list" class="hidden"></ol>
+
+      <!-- Table -->
+      <details class="opt-card results-section" open>
+        <summary>
+          <span class="opt-summary-label">Detail</span>
+        </summary>
+        <div class="table-wrap">
+          <table id="result-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Note</th>
+                <th>String</th>
+                <th>Position</th>
+                <th>Finger</th>
+                <th>Duration</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody id="result-body"></tbody>
+          </table>
+        </div>
+      </details>
+    </div>
+  </section>
+</main>
+
+<script id="examples-data" type="application/json">
+{{ examples_json }}
+</script>
+
+<script src="{% static 'fingering/app.js' %}"></script>
+</body>
+</html>

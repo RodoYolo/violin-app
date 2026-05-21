@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+db.sqlite3
+.venv/
+venv/
+env/
+node_modules/
+.idea/
+.claude/

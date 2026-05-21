@@ -1,0 +1,87 @@
+{
+  "title": "Merry-Go-Round of Life",
+  "composer": "Joe Hisaishi",
+  "source": {
+    "url": "https://bitmidi.com/joe-hisaishi-merry-go-round-of-life-howls-moving-castle-mid",
+    "upload_path": "https://bitmidi.com/uploads/63179.mid",
+    "downloaded": "2026-05-21",
+    "original_filename": "63179.mid",
+    "sha256": "42151989424419fc5aede85f2e743a1d92080ef20177be7d4c2b5aa6468af644"
+  },
+  "midi_file": {
+    "type": 1,
+    "ticks_per_beat": 480,
+    "time_signature": "3/4",
+    "key_signature_midi": "Bb",
+    "tempo_map": [
+      {"tick": 0, "tempo_us": 250000, "bpm": 240.0},
+      {"tick": 480, "tempo_us": 576923, "bpm": 104.0},
+      {"tick": 6000, "tempo_us": 681818, "bpm": 88.0},
+      {"tick": 6240, "tempo_us": 348837, "bpm": 172.0},
+      {"tick": 6300, "tempo_us": 361445, "bpm": 166.0},
+      {"tick": 6360, "tempo_us": 368098, "bpm": 163.0},
+      {"tick": 6420, "tempo_us": 377358, "bpm": 159.0},
+      {"tick": 6480, "tempo_us": 394736, "bpm": 152.0},
+      {"tick": 6540, "tempo_us": 413793, "bpm": 145.0},
+      {"tick": 6600, "tempo_us": 425531, "bpm": 141.0},
+      {"tick": 6660, "tempo_us": 487804, "bpm": 123.0},
+      {"tick": 6720, "tempo_us": 571428, "bpm": 105.0},
+      {"tick": 7680, "tempo_us": 779220, "bpm": 77.0},
+      {"tick": 10080, "tempo_us": 697674, "bpm": 86.0},
+      {"tick": 33000, "tempo_us": 666666, "bpm": 90.0},
+      {"tick": 33120, "tempo_us": 857142, "bpm": 70.0},
+      {"tick": 34440, "tempo_us": 666666, "bpm": 90.0},
+      {"tick": 34560, "tempo_us": 769230, "bpm": 78.0},
+      {"tick": 37440, "tempo_us": 333333, "bpm": 180.0},
+      {"tick": 190080, "tempo_us": 983606, "bpm": 61.0},
+      {"tick": 191520, "tempo_us": 333333, "bpm": 180.0},
+      {"tick": 220320, "tempo_us": 600000, "bpm": 100.0},
+      {"tick": 224040, "tempo_us": 566037, "bpm": 106.0},
+      {"tick": 224100, "tempo_us": 517241, "bpm": 116.0},
+      {"tick": 224160, "tempo_us": 483870, "bpm": 124.0},
+      {"tick": 224220, "tempo_us": 444444, "bpm": 135.0},
+      {"tick": 224280, "tempo_us": 419580, "bpm": 143.0},
+      {"tick": 224340, "tempo_us": 394736, "bpm": 152.0},
+      {"tick": 224400, "tempo_us": 370370, "bpm": 162.0},
+      {"tick": 224460, "tempo_us": 350877, "bpm": 171.0},
+      {"tick": 224520, "tempo_us": 340909, "bpm": 176.0},
+      {"tick": 224580, "tempo_us": 337078, "bpm": 178.0},
+      {"tick": 224640, "tempo_us": 331491, "bpm": 181.0},
+      {"tick": 232080, "tempo_us": 500000, "bpm": 120.0},
+      {"tick": 233880, "tempo_us": 1016949, "bpm": 59.0},
+      {"tick": 234720, "tempo_us": 500000, "bpm": 120.0},
+      {"tick": 235200, "tempo_us": 2000000, "bpm": 30.0}
+    ],
+    "tracks": [
+      {"index": 0, "name": "tempo/meta", "note_count": 0},
+      {"index": 1, "name": "System Setup", "note_count": 0},
+      {"index": 2, "name": "CH #1", "gm_program": 40, "instrument": "Violin", "note_count": 298, "pitch_range_midi": [62, 95], "velocity_range": [127, 127], "velocity_mean": 127.0},
+      {"index": 3, "name": "CH #2", "gm_program": 0, "instrument": "Acoustic Grand Piano", "note_count": 818},
+      {"index": 4, "name": "CH #3", "gm_program": 0, "instrument": "Acoustic Grand Piano", "note_count": 517},
+      {"index": 5, "name": "CH #4", "gm_program": 0, "instrument": "Acoustic Grand Piano", "note_count": 69}
+    ]
+  },
+  "musical_notes": {
+    "actual_key": "Bb major",
+    "time_signature": "3/4",
+    "sections": [
+      {"name": "Main theme", "description": "Waltz-time main melody at ~104 BPM in Bb major"},
+      {"name": "Development / modulations", "description": "Various tempo changes and key areas through the middle section"},
+      {"name": "Reprise / coda", "description": "Return of main theme and ritardando to close"}
+    ],
+    "dynamics": {
+      "velocity_range": [127, 127],
+      "velocity_mean": 127.0,
+      "note": "Flat velocity throughout — no dynamics encoded in this MIDI"
+    }
+  },
+  "conversion": {
+    "extracted_track": 2,
+    "quantize_grid": 0.25,
+    "rest_threshold_beats": 0.1,
+    "string_constraints": [],
+    "output_format": "[[pitch_midi, duration_beats] | [null, duration_beats]]",
+    "script": "songs/merry_go_round/import.py",
+    "output_file": "fingering/data_merry_go_round.json"
+  }
+}

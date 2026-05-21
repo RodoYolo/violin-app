@@ -1,0 +1,3601 @@
+{
+  "title": "El Choclo",
+  "composer": "\u00c1ngel Gregorio Villoldo",
+  "year": 1903,
+  "genre": "Argentine tango",
+  "midi_sequencer": "unknown",
+  "source": {
+    "url": "https://bitmidi.com/el-choclo-1-mid",
+    "upload_path": "https://bitmidi.com/uploads/42918.mid",
+    "downloaded": "2026-05-21",
+    "original_filename": "42918.mid",
+    "sha256": "c7fbf027246d4b6987a7ba823a41f2648fabb76c420152ad2a6870f7329388a0"
+  },
+  "midi_file": {
+    "type": 0,
+    "ticks_per_beat": 96,
+    "num_tracks": 1,
+    "format_note": "Type 0 \u2014 all channels in a single track",
+    "time_signature": "4/4",
+    "key_signature_midi": "not specified",
+    "note_on_key": "MIDI has no key signature; piece is in A minor / C major (common tango key)",
+    "tempo_map": [
+      {
+        "tick": 0,
+        "tempo_us": 499968,
+        "bpm": 120.0
+      }
+    ],
+    "channels": [
+      {
+        "channel": 1,
+        "gm_program": 32,
+        "gm_name": "Acoustic Bass",
+        "note_count": 270,
+        "pitch_range": [
+          33,
+          50
+        ],
+        "velocity_range": [
+          1,
+          125
+        ],
+        "velocity_mean": 113.7
+      },
+      {
+        "channel": 2,
+        "gm_program": 23,
+        "gm_name": "Tango Accordion",
+        "note_count": 719,
+        "pitch_range": [
+          49,
+          73
+        ],
+        "velocity_range": [
+          60,
+          127
+        ],
+        "velocity_mean": 100.5
+      },
+      {
+        "channel": 4,
+        "gm_program": 48,
+        "gm_name": "String Ensemble 1",
+        "note_count": 572,
+        "pitch_range": [
+          57,
+          88
+        ],
+        "velocity_range": [
+          80,
+          127
+        ],
+        "velocity_mean": 109.4
+      },
+      {
+        "channel": 5,
+        "gm_program": 11,
+        "gm_name": "Vibraphone",
+        "note_count": 90,
+        "pitch_range": [
+          56,
+          74
+        ],
+        "velocity_range": [
+          77,
+          112
+        ],
+        "velocity_mean": 96.5
+      },
+      {
+        "channel": 6,
+        "gm_program": 0,
+        "gm_name": "Acoustic Grand Piano",
+        "note_count": 841,
+        "pitch_range": [
+          33,
+          86
+        ],
+        "velocity_range": [
+          57,
+          127
+        ],
+        "velocity_mean": 101.0
+      },
+      {
+        "channel": 9,
+        "gm_program": 0,
+        "gm_name": "Acoustic Grand Piano",
+        "note_count": 829,
+        "pitch_range": [
+          35,
+          51
+        ],
+        "velocity_range": [
+          12,
+          112
+        ],
+        "velocity_mean": 83.3
+      }
+    ]
+  },
+  "musical_notes": {
+    "actual_key": "A minor",
+    "time_signature": "4/4",
+    "tempo_bpm": 120,
+    "character": "Argentine tango \u2014 habanera-derived rhythm, dotted figures, chromatic ornaments",
+    "sections": [
+      {
+        "name": "Introduction",
+        "description": "Opening tango figures, characteristic habanera rhythm"
+      },
+      {
+        "name": "A section (verse)",
+        "description": "Main melody, stepwise and chromatic motion in A minor"
+      },
+      {
+        "name": "B section (chorus)",
+        "description": "Contrasting theme, more lyrical"
+      },
+      {
+        "name": "Return / coda",
+        "description": "Recapitulation with tango ornamentation"
+      }
+    ],
+    "dynamics": {
+      "melody_velocity_range": [
+        80,
+        127
+      ],
+      "melody_velocity_mean": 109.4,
+      "note": "Good dynamic variation encoded \u2014 ranges from mf (80) to ff (127); tango accents visible in velocity spikes"
+    }
+  },
+  "conversion": {
+    "midi_type": 0,
+    "extracted_channel": 4,
+    "extracted_program": 48,
+    "extracted_program_name": "String Ensemble 1",
+    "channel_selection_reason": "Channel 4 (String Ensemble, GM 48) carries the melodic line in violin range (MIDI 57-88); other channels are bass, accordion, piano accompaniment, and percussion",
+    "quantize_grid": "1/16 note (0.25 quarter notes)",
+    "rest_threshold_beats": 0.1,
+    "string_constraints": {},
+    "output_format": "[[midi_pitch, duration_quarters] | [null, duration_quarters]]",
+    "script": "songs/el_choclo/import.py",
+    "output_file": "fingering/data_el_choclo.json"
+  },
+  "violin_notes": [
+    {
+      "start_tick": 584,
+      "end_tick": 600,
+      "pitch": 69,
+      "velocity": 94
+    },
+    {
+      "start_tick": 634,
+      "end_tick": 651,
+      "pitch": 69,
+      "velocity": 90
+    },
+    {
+      "start_tick": 682,
+      "end_tick": 695,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 728,
+      "end_tick": 746,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 776,
+      "end_tick": 791,
+      "pitch": 69,
+      "velocity": 117
+    },
+    {
+      "start_tick": 824,
+      "end_tick": 839,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 872,
+      "end_tick": 884,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 920,
+      "end_tick": 933,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 967,
+      "end_tick": 984,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 1015,
+      "end_tick": 1029,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 1063,
+      "end_tick": 1077,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 1111,
+      "end_tick": 1132,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 1204,
+      "end_tick": 1228,
+      "pitch": 81,
+      "velocity": 127
+    },
+    {
+      "start_tick": 1348,
+      "end_tick": 1394,
+      "pitch": 81,
+      "velocity": 105
+    },
+    {
+      "start_tick": 1394,
+      "end_tick": 1442,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 1442,
+      "end_tick": 1491,
+      "pitch": 86,
+      "velocity": 111
+    },
+    {
+      "start_tick": 1491,
+      "end_tick": 1536,
+      "pitch": 86,
+      "velocity": 111
+    },
+    {
+      "start_tick": 1539,
+      "end_tick": 1586,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 1586,
+      "end_tick": 1632,
+      "pitch": 81,
+      "velocity": 105
+    },
+    {
+      "start_tick": 1632,
+      "end_tick": 1680,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 1680,
+      "end_tick": 1728,
+      "pitch": 77,
+      "velocity": 98
+    },
+    {
+      "start_tick": 1728,
+      "end_tick": 1776,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 1776,
+      "end_tick": 1823,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 1824,
+      "end_tick": 1871,
+      "pitch": 77,
+      "velocity": 111
+    },
+    {
+      "start_tick": 1871,
+      "end_tick": 1967,
+      "pitch": 77,
+      "velocity": 117
+    },
+    {
+      "start_tick": 1871,
+      "end_tick": 1967,
+      "pitch": 68,
+      "velocity": 111
+    },
+    {
+      "start_tick": 1967,
+      "end_tick": 1989,
+      "pitch": 69,
+      "velocity": 117
+    },
+    {
+      "start_tick": 1967,
+      "end_tick": 1989,
+      "pitch": 76,
+      "velocity": 117
+    },
+    {
+      "start_tick": 2109,
+      "end_tick": 2124,
+      "pitch": 69,
+      "velocity": 98
+    },
+    {
+      "start_tick": 2157,
+      "end_tick": 2173,
+      "pitch": 69,
+      "velocity": 105
+    },
+    {
+      "start_tick": 2205,
+      "end_tick": 2220,
+      "pitch": 70,
+      "velocity": 126
+    },
+    {
+      "start_tick": 2253,
+      "end_tick": 2268,
+      "pitch": 70,
+      "velocity": 111
+    },
+    {
+      "start_tick": 2300,
+      "end_tick": 2315,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 2345,
+      "end_tick": 2361,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 2393,
+      "end_tick": 2408,
+      "pitch": 73,
+      "velocity": 111
+    },
+    {
+      "start_tick": 2441,
+      "end_tick": 2457,
+      "pitch": 73,
+      "velocity": 126
+    },
+    {
+      "start_tick": 2489,
+      "end_tick": 2504,
+      "pitch": 76,
+      "velocity": 126
+    },
+    {
+      "start_tick": 2537,
+      "end_tick": 2555,
+      "pitch": 76,
+      "velocity": 126
+    },
+    {
+      "start_tick": 2584,
+      "end_tick": 2600,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 2632,
+      "end_tick": 2688,
+      "pitch": 82,
+      "velocity": 126
+    },
+    {
+      "start_tick": 2685,
+      "end_tick": 2709,
+      "pitch": 84,
+      "velocity": 90
+    },
+    {
+      "start_tick": 2707,
+      "end_tick": 2724,
+      "pitch": 82,
+      "velocity": 117
+    },
+    {
+      "start_tick": 2728,
+      "end_tick": 2744,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 2869,
+      "end_tick": 2903,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 2917,
+      "end_tick": 2965,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 2965,
+      "end_tick": 3000,
+      "pitch": 88,
+      "velocity": 111
+    },
+    {
+      "start_tick": 3012,
+      "end_tick": 3057,
+      "pitch": 88,
+      "velocity": 126
+    },
+    {
+      "start_tick": 3060,
+      "end_tick": 3091,
+      "pitch": 85,
+      "velocity": 111
+    },
+    {
+      "start_tick": 3108,
+      "end_tick": 3161,
+      "pitch": 85,
+      "velocity": 105
+    },
+    {
+      "start_tick": 3156,
+      "end_tick": 3184,
+      "pitch": 81,
+      "velocity": 126
+    },
+    {
+      "start_tick": 3204,
+      "end_tick": 3257,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 3253,
+      "end_tick": 3287,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 3298,
+      "end_tick": 3344,
+      "pitch": 79,
+      "velocity": 117
+    },
+    {
+      "start_tick": 3346,
+      "end_tick": 3390,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 3396,
+      "end_tick": 3488,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 3488,
+      "end_tick": 3515,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 3632,
+      "end_tick": 3648,
+      "pitch": 69,
+      "velocity": 94
+    },
+    {
+      "start_tick": 3680,
+      "end_tick": 3696,
+      "pitch": 69,
+      "velocity": 90
+    },
+    {
+      "start_tick": 3727,
+      "end_tick": 3741,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 3775,
+      "end_tick": 3792,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 3823,
+      "end_tick": 3837,
+      "pitch": 69,
+      "velocity": 117
+    },
+    {
+      "start_tick": 3871,
+      "end_tick": 3885,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 3919,
+      "end_tick": 3931,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 3964,
+      "end_tick": 3980,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 4012,
+      "end_tick": 4031,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 4060,
+      "end_tick": 4076,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 4108,
+      "end_tick": 4124,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 4155,
+      "end_tick": 4178,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 4251,
+      "end_tick": 4274,
+      "pitch": 81,
+      "velocity": 127
+    },
+    {
+      "start_tick": 4392,
+      "end_tick": 4442,
+      "pitch": 81,
+      "velocity": 105
+    },
+    {
+      "start_tick": 4442,
+      "end_tick": 4488,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 4488,
+      "end_tick": 4536,
+      "pitch": 86,
+      "velocity": 111
+    },
+    {
+      "start_tick": 4538,
+      "end_tick": 4581,
+      "pitch": 86,
+      "velocity": 126
+    },
+    {
+      "start_tick": 4587,
+      "end_tick": 4608,
+      "pitch": 81,
+      "velocity": 126
+    },
+    {
+      "start_tick": 4632,
+      "end_tick": 4677,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 4683,
+      "end_tick": 4716,
+      "pitch": 78,
+      "velocity": 126
+    },
+    {
+      "start_tick": 4728,
+      "end_tick": 4764,
+      "pitch": 78,
+      "velocity": 127
+    },
+    {
+      "start_tick": 4776,
+      "end_tick": 4800,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 4824,
+      "end_tick": 4869,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 4865,
+      "end_tick": 4905,
+      "pitch": 84,
+      "velocity": 105
+    },
+    {
+      "start_tick": 4916,
+      "end_tick": 5012,
+      "pitch": 75,
+      "velocity": 94
+    },
+    {
+      "start_tick": 4917,
+      "end_tick": 5012,
+      "pitch": 84,
+      "velocity": 117
+    },
+    {
+      "start_tick": 5012,
+      "end_tick": 5032,
+      "pitch": 74,
+      "velocity": 105
+    },
+    {
+      "start_tick": 5013,
+      "end_tick": 5036,
+      "pitch": 82,
+      "velocity": 126
+    },
+    {
+      "start_tick": 5155,
+      "end_tick": 5184,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 5155,
+      "end_tick": 5187,
+      "pitch": 82,
+      "velocity": 94
+    },
+    {
+      "start_tick": 5155,
+      "end_tick": 5188,
+      "pitch": 79,
+      "velocity": 105
+    },
+    {
+      "start_tick": 5204,
+      "end_tick": 5235,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 5204,
+      "end_tick": 5236,
+      "pitch": 79,
+      "velocity": 94
+    },
+    {
+      "start_tick": 5204,
+      "end_tick": 5236,
+      "pitch": 82,
+      "velocity": 98
+    },
+    {
+      "start_tick": 5252,
+      "end_tick": 5275,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 5252,
+      "end_tick": 5280,
+      "pitch": 82,
+      "velocity": 90
+    },
+    {
+      "start_tick": 5252,
+      "end_tick": 5283,
+      "pitch": 79,
+      "velocity": 98
+    },
+    {
+      "start_tick": 5300,
+      "end_tick": 5345,
+      "pitch": 82,
+      "velocity": 105
+    },
+    {
+      "start_tick": 5300,
+      "end_tick": 5348,
+      "pitch": 79,
+      "velocity": 98
+    },
+    {
+      "start_tick": 5300,
+      "end_tick": 5349,
+      "pitch": 74,
+      "velocity": 111
+    },
+    {
+      "start_tick": 5345,
+      "end_tick": 5368,
+      "pitch": 73,
+      "velocity": 111
+    },
+    {
+      "start_tick": 5345,
+      "end_tick": 5375,
+      "pitch": 81,
+      "velocity": 94
+    },
+    {
+      "start_tick": 5347,
+      "end_tick": 5368,
+      "pitch": 76,
+      "velocity": 94
+    },
+    {
+      "start_tick": 5393,
+      "end_tick": 5427,
+      "pitch": 73,
+      "velocity": 111
+    },
+    {
+      "start_tick": 5393,
+      "end_tick": 5450,
+      "pitch": 76,
+      "velocity": 98
+    },
+    {
+      "start_tick": 5393,
+      "end_tick": 5452,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 5441,
+      "end_tick": 5467,
+      "pitch": 74,
+      "velocity": 111
+    },
+    {
+      "start_tick": 5441,
+      "end_tick": 5468,
+      "pitch": 79,
+      "velocity": 105
+    },
+    {
+      "start_tick": 5441,
+      "end_tick": 5468,
+      "pitch": 70,
+      "velocity": 117
+    },
+    {
+      "start_tick": 5489,
+      "end_tick": 5528,
+      "pitch": 74,
+      "velocity": 111
+    },
+    {
+      "start_tick": 5489,
+      "end_tick": 5533,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 5489,
+      "end_tick": 5541,
+      "pitch": 79,
+      "velocity": 105
+    },
+    {
+      "start_tick": 5537,
+      "end_tick": 5559,
+      "pitch": 77,
+      "velocity": 111
+    },
+    {
+      "start_tick": 5537,
+      "end_tick": 5559,
+      "pitch": 69,
+      "velocity": 94
+    },
+    {
+      "start_tick": 5537,
+      "end_tick": 5560,
+      "pitch": 73,
+      "velocity": 94
+    },
+    {
+      "start_tick": 5584,
+      "end_tick": 5611,
+      "pitch": 77,
+      "velocity": 111
+    },
+    {
+      "start_tick": 5584,
+      "end_tick": 5639,
+      "pitch": 69,
+      "velocity": 105
+    },
+    {
+      "start_tick": 5584,
+      "end_tick": 5642,
+      "pitch": 73,
+      "velocity": 98
+    },
+    {
+      "start_tick": 5632,
+      "end_tick": 5652,
+      "pitch": 67,
+      "velocity": 98
+    },
+    {
+      "start_tick": 5632,
+      "end_tick": 5659,
+      "pitch": 70,
+      "velocity": 105
+    },
+    {
+      "start_tick": 5632,
+      "end_tick": 5663,
+      "pitch": 76,
+      "velocity": 105
+    },
+    {
+      "start_tick": 5680,
+      "end_tick": 5728,
+      "pitch": 67,
+      "velocity": 105
+    },
+    {
+      "start_tick": 5680,
+      "end_tick": 5736,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 5680,
+      "end_tick": 5748,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 5728,
+      "end_tick": 5732,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 5728,
+      "end_tick": 5748,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 5728,
+      "end_tick": 5751,
+      "pitch": 65,
+      "velocity": 105
+    },
+    {
+      "start_tick": 5821,
+      "end_tick": 5844,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 5869,
+      "end_tick": 5920,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 5917,
+      "end_tick": 5943,
+      "pitch": 76,
+      "velocity": 105
+    },
+    {
+      "start_tick": 5965,
+      "end_tick": 6017,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 6012,
+      "end_tick": 6036,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 6060,
+      "end_tick": 6120,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 6108,
+      "end_tick": 6127,
+      "pitch": 73,
+      "velocity": 117
+    },
+    {
+      "start_tick": 6204,
+      "end_tick": 6232,
+      "pitch": 79,
+      "velocity": 126
+    },
+    {
+      "start_tick": 6204,
+      "end_tick": 6236,
+      "pitch": 70,
+      "velocity": 105
+    },
+    {
+      "start_tick": 6250,
+      "end_tick": 6292,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 6251,
+      "end_tick": 6292,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 6299,
+      "end_tick": 6328,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 6299,
+      "end_tick": 6328,
+      "pitch": 69,
+      "velocity": 98
+    },
+    {
+      "start_tick": 6346,
+      "end_tick": 6396,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 6346,
+      "end_tick": 6401,
+      "pitch": 69,
+      "velocity": 94
+    },
+    {
+      "start_tick": 6395,
+      "end_tick": 6439,
+      "pitch": 67,
+      "velocity": 94
+    },
+    {
+      "start_tick": 6395,
+      "end_tick": 6441,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 6442,
+      "end_tick": 6465,
+      "pitch": 65,
+      "velocity": 117
+    },
+    {
+      "start_tick": 6442,
+      "end_tick": 6465,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 6536,
+      "end_tick": 6608,
+      "pitch": 67,
+      "velocity": 98
+    },
+    {
+      "start_tick": 6536,
+      "end_tick": 6631,
+      "pitch": 69,
+      "velocity": 126
+    },
+    {
+      "start_tick": 6632,
+      "end_tick": 6656,
+      "pitch": 65,
+      "velocity": 105
+    },
+    {
+      "start_tick": 6632,
+      "end_tick": 6656,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 6823,
+      "end_tick": 7203,
+      "pitch": 76,
+      "velocity": 87
+    },
+    {
+      "start_tick": 6823,
+      "end_tick": 7203,
+      "pitch": 70,
+      "velocity": 82
+    },
+    {
+      "start_tick": 6824,
+      "end_tick": 7583,
+      "pitch": 72,
+      "velocity": 82
+    },
+    {
+      "start_tick": 7203,
+      "end_tick": 7584,
+      "pitch": 69,
+      "velocity": 87
+    },
+    {
+      "start_tick": 7204,
+      "end_tick": 7583,
+      "pitch": 77,
+      "velocity": 82
+    },
+    {
+      "start_tick": 7584,
+      "end_tick": 7965,
+      "pitch": 72,
+      "velocity": 80
+    },
+    {
+      "start_tick": 7584,
+      "end_tick": 7965,
+      "pitch": 70,
+      "velocity": 90
+    },
+    {
+      "start_tick": 7584,
+      "end_tick": 7965,
+      "pitch": 67,
+      "velocity": 84
+    },
+    {
+      "start_tick": 7965,
+      "end_tick": 8060,
+      "pitch": 68,
+      "velocity": 90
+    },
+    {
+      "start_tick": 7965,
+      "end_tick": 8060,
+      "pitch": 71,
+      "velocity": 84
+    },
+    {
+      "start_tick": 8060,
+      "end_tick": 8084,
+      "pitch": 72,
+      "velocity": 84
+    },
+    {
+      "start_tick": 8060,
+      "end_tick": 8084,
+      "pitch": 69,
+      "velocity": 98
+    },
+    {
+      "start_tick": 8347,
+      "end_tick": 8727,
+      "pitch": 61,
+      "velocity": 98
+    },
+    {
+      "start_tick": 8347,
+      "end_tick": 8728,
+      "pitch": 57,
+      "velocity": 94
+    },
+    {
+      "start_tick": 8728,
+      "end_tick": 8821,
+      "pitch": 58,
+      "velocity": 98
+    },
+    {
+      "start_tick": 8728,
+      "end_tick": 8821,
+      "pitch": 64,
+      "velocity": 111
+    },
+    {
+      "start_tick": 8821,
+      "end_tick": 8847,
+      "pitch": 62,
+      "velocity": 126
+    },
+    {
+      "start_tick": 8823,
+      "end_tick": 8847,
+      "pitch": 57,
+      "velocity": 98
+    },
+    {
+      "start_tick": 8967,
+      "end_tick": 8982,
+      "pitch": 77,
+      "velocity": 117
+    },
+    {
+      "start_tick": 9012,
+      "end_tick": 9032,
+      "pitch": 79,
+      "velocity": 126
+    },
+    {
+      "start_tick": 9060,
+      "end_tick": 9076,
+      "pitch": 77,
+      "velocity": 111
+    },
+    {
+      "start_tick": 9108,
+      "end_tick": 9129,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 9108,
+      "end_tick": 9492,
+      "pitch": 65,
+      "velocity": 80
+    },
+    {
+      "start_tick": 9108,
+      "end_tick": 9493,
+      "pitch": 62,
+      "velocity": 98
+    },
+    {
+      "start_tick": 9156,
+      "end_tick": 9172,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 9204,
+      "end_tick": 9220,
+      "pitch": 73,
+      "velocity": 105
+    },
+    {
+      "start_tick": 9251,
+      "end_tick": 9268,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 9299,
+      "end_tick": 9314,
+      "pitch": 76,
+      "velocity": 117
+    },
+    {
+      "start_tick": 9347,
+      "end_tick": 9362,
+      "pitch": 77,
+      "velocity": 111
+    },
+    {
+      "start_tick": 9395,
+      "end_tick": 9412,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 9443,
+      "end_tick": 9460,
+      "pitch": 80,
+      "velocity": 117
+    },
+    {
+      "start_tick": 9488,
+      "end_tick": 9504,
+      "pitch": 81,
+      "velocity": 126
+    },
+    {
+      "start_tick": 9488,
+      "end_tick": 9507,
+      "pitch": 64,
+      "velocity": 90
+    },
+    {
+      "start_tick": 9488,
+      "end_tick": 9512,
+      "pitch": 61,
+      "velocity": 98
+    },
+    {
+      "start_tick": 9916,
+      "end_tick": 10011,
+      "pitch": 64,
+      "velocity": 97
+    },
+    {
+      "start_tick": 9916,
+      "end_tick": 10011,
+      "pitch": 60,
+      "velocity": 93
+    },
+    {
+      "start_tick": 10011,
+      "end_tick": 10058,
+      "pitch": 62,
+      "velocity": 85
+    },
+    {
+      "start_tick": 10011,
+      "end_tick": 10059,
+      "pitch": 65,
+      "velocity": 94
+    },
+    {
+      "start_tick": 10059,
+      "end_tick": 10250,
+      "pitch": 64,
+      "velocity": 85
+    },
+    {
+      "start_tick": 10059,
+      "end_tick": 10250,
+      "pitch": 67,
+      "velocity": 106
+    },
+    {
+      "start_tick": 10298,
+      "end_tick": 10392,
+      "pitch": 65,
+      "velocity": 93
+    },
+    {
+      "start_tick": 10298,
+      "end_tick": 10392,
+      "pitch": 57,
+      "velocity": 90
+    },
+    {
+      "start_tick": 10392,
+      "end_tick": 10440,
+      "pitch": 58,
+      "velocity": 102
+    },
+    {
+      "start_tick": 10392,
+      "end_tick": 10440,
+      "pitch": 67,
+      "velocity": 97
+    },
+    {
+      "start_tick": 10440,
+      "end_tick": 10629,
+      "pitch": 60,
+      "velocity": 92
+    },
+    {
+      "start_tick": 10440,
+      "end_tick": 10629,
+      "pitch": 69,
+      "velocity": 97
+    },
+    {
+      "start_tick": 10677,
+      "end_tick": 10772,
+      "pitch": 67,
+      "velocity": 99
+    },
+    {
+      "start_tick": 10677,
+      "end_tick": 10772,
+      "pitch": 64,
+      "velocity": 102
+    },
+    {
+      "start_tick": 10773,
+      "end_tick": 10820,
+      "pitch": 69,
+      "velocity": 99
+    },
+    {
+      "start_tick": 10773,
+      "end_tick": 10821,
+      "pitch": 65,
+      "velocity": 97
+    },
+    {
+      "start_tick": 10821,
+      "end_tick": 10964,
+      "pitch": 67,
+      "velocity": 102
+    },
+    {
+      "start_tick": 10821,
+      "end_tick": 10964,
+      "pitch": 70,
+      "velocity": 85
+    },
+    {
+      "start_tick": 11012,
+      "end_tick": 11103,
+      "pitch": 80,
+      "velocity": 105
+    },
+    {
+      "start_tick": 11012,
+      "end_tick": 11103,
+      "pitch": 86,
+      "velocity": 111
+    },
+    {
+      "start_tick": 11012,
+      "end_tick": 11105,
+      "pitch": 71,
+      "velocity": 105
+    },
+    {
+      "start_tick": 11105,
+      "end_tick": 11124,
+      "pitch": 81,
+      "velocity": 105
+    },
+    {
+      "start_tick": 11105,
+      "end_tick": 11124,
+      "pitch": 84,
+      "velocity": 117
+    },
+    {
+      "start_tick": 11107,
+      "end_tick": 11124,
+      "pitch": 72,
+      "velocity": 105
+    },
+    {
+      "start_tick": 11392,
+      "end_tick": 11772,
+      "pitch": 61,
+      "velocity": 98
+    },
+    {
+      "start_tick": 11392,
+      "end_tick": 11772,
+      "pitch": 57,
+      "velocity": 94
+    },
+    {
+      "start_tick": 11772,
+      "end_tick": 11868,
+      "pitch": 58,
+      "velocity": 98
+    },
+    {
+      "start_tick": 11773,
+      "end_tick": 11876,
+      "pitch": 64,
+      "velocity": 111
+    },
+    {
+      "start_tick": 11868,
+      "end_tick": 11892,
+      "pitch": 62,
+      "velocity": 126
+    },
+    {
+      "start_tick": 11868,
+      "end_tick": 11892,
+      "pitch": 57,
+      "velocity": 98
+    },
+    {
+      "start_tick": 12011,
+      "end_tick": 12028,
+      "pitch": 77,
+      "velocity": 117
+    },
+    {
+      "start_tick": 12059,
+      "end_tick": 12076,
+      "pitch": 79,
+      "velocity": 126
+    },
+    {
+      "start_tick": 12107,
+      "end_tick": 12122,
+      "pitch": 77,
+      "velocity": 111
+    },
+    {
+      "start_tick": 12155,
+      "end_tick": 12176,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 12155,
+      "end_tick": 12535,
+      "pitch": 62,
+      "velocity": 98
+    },
+    {
+      "start_tick": 12155,
+      "end_tick": 12537,
+      "pitch": 65,
+      "velocity": 80
+    },
+    {
+      "start_tick": 12203,
+      "end_tick": 12219,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 12250,
+      "end_tick": 12267,
+      "pitch": 73,
+      "velocity": 105
+    },
+    {
+      "start_tick": 12298,
+      "end_tick": 12315,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 12346,
+      "end_tick": 12360,
+      "pitch": 76,
+      "velocity": 117
+    },
+    {
+      "start_tick": 12394,
+      "end_tick": 12408,
+      "pitch": 77,
+      "velocity": 111
+    },
+    {
+      "start_tick": 12442,
+      "end_tick": 12459,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 12488,
+      "end_tick": 12504,
+      "pitch": 80,
+      "velocity": 117
+    },
+    {
+      "start_tick": 12535,
+      "end_tick": 12552,
+      "pitch": 81,
+      "velocity": 126
+    },
+    {
+      "start_tick": 12535,
+      "end_tick": 12555,
+      "pitch": 64,
+      "velocity": 90
+    },
+    {
+      "start_tick": 12536,
+      "end_tick": 12560,
+      "pitch": 61,
+      "velocity": 98
+    },
+    {
+      "start_tick": 12774,
+      "end_tick": 12789,
+      "pitch": 69,
+      "velocity": 94
+    },
+    {
+      "start_tick": 12822,
+      "end_tick": 12839,
+      "pitch": 69,
+      "velocity": 90
+    },
+    {
+      "start_tick": 12870,
+      "end_tick": 12884,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 12916,
+      "end_tick": 12933,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 12964,
+      "end_tick": 12980,
+      "pitch": 69,
+      "velocity": 117
+    },
+    {
+      "start_tick": 13012,
+      "end_tick": 13028,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 13060,
+      "end_tick": 13072,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 13108,
+      "end_tick": 13123,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 13154,
+      "end_tick": 13172,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 13202,
+      "end_tick": 13217,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 13250,
+      "end_tick": 13265,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 13298,
+      "end_tick": 13320,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 13392,
+      "end_tick": 13416,
+      "pitch": 81,
+      "velocity": 127
+    },
+    {
+      "start_tick": 13536,
+      "end_tick": 13581,
+      "pitch": 81,
+      "velocity": 105
+    },
+    {
+      "start_tick": 13584,
+      "end_tick": 13629,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 13629,
+      "end_tick": 13677,
+      "pitch": 86,
+      "velocity": 111
+    },
+    {
+      "start_tick": 13679,
+      "end_tick": 13725,
+      "pitch": 86,
+      "velocity": 111
+    },
+    {
+      "start_tick": 13727,
+      "end_tick": 13773,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 13773,
+      "end_tick": 13820,
+      "pitch": 81,
+      "velocity": 105
+    },
+    {
+      "start_tick": 13823,
+      "end_tick": 13868,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 13868,
+      "end_tick": 13916,
+      "pitch": 77,
+      "velocity": 98
+    },
+    {
+      "start_tick": 13916,
+      "end_tick": 13964,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 13964,
+      "end_tick": 14011,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 14012,
+      "end_tick": 14059,
+      "pitch": 77,
+      "velocity": 111
+    },
+    {
+      "start_tick": 14060,
+      "end_tick": 14153,
+      "pitch": 68,
+      "velocity": 111
+    },
+    {
+      "start_tick": 14060,
+      "end_tick": 14153,
+      "pitch": 77,
+      "velocity": 117
+    },
+    {
+      "start_tick": 14153,
+      "end_tick": 14177,
+      "pitch": 69,
+      "velocity": 117
+    },
+    {
+      "start_tick": 14153,
+      "end_tick": 14177,
+      "pitch": 76,
+      "velocity": 117
+    },
+    {
+      "start_tick": 14296,
+      "end_tick": 14312,
+      "pitch": 69,
+      "velocity": 98
+    },
+    {
+      "start_tick": 14344,
+      "end_tick": 14361,
+      "pitch": 69,
+      "velocity": 105
+    },
+    {
+      "start_tick": 14392,
+      "end_tick": 14408,
+      "pitch": 70,
+      "velocity": 126
+    },
+    {
+      "start_tick": 14440,
+      "end_tick": 14456,
+      "pitch": 70,
+      "velocity": 111
+    },
+    {
+      "start_tick": 14488,
+      "end_tick": 14504,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 14535,
+      "end_tick": 14551,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 14584,
+      "end_tick": 14599,
+      "pitch": 73,
+      "velocity": 111
+    },
+    {
+      "start_tick": 14632,
+      "end_tick": 14646,
+      "pitch": 73,
+      "velocity": 126
+    },
+    {
+      "start_tick": 14680,
+      "end_tick": 14694,
+      "pitch": 76,
+      "velocity": 126
+    },
+    {
+      "start_tick": 14728,
+      "end_tick": 14744,
+      "pitch": 76,
+      "velocity": 126
+    },
+    {
+      "start_tick": 14773,
+      "end_tick": 14788,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 14821,
+      "end_tick": 14876,
+      "pitch": 82,
+      "velocity": 126
+    },
+    {
+      "start_tick": 14875,
+      "end_tick": 14900,
+      "pitch": 84,
+      "velocity": 90
+    },
+    {
+      "start_tick": 14896,
+      "end_tick": 14915,
+      "pitch": 82,
+      "velocity": 117
+    },
+    {
+      "start_tick": 14916,
+      "end_tick": 14934,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 15060,
+      "end_tick": 15092,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 15108,
+      "end_tick": 15156,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 15156,
+      "end_tick": 15189,
+      "pitch": 88,
+      "velocity": 111
+    },
+    {
+      "start_tick": 15204,
+      "end_tick": 15248,
+      "pitch": 88,
+      "velocity": 126
+    },
+    {
+      "start_tick": 15248,
+      "end_tick": 15280,
+      "pitch": 85,
+      "velocity": 111
+    },
+    {
+      "start_tick": 15298,
+      "end_tick": 15349,
+      "pitch": 85,
+      "velocity": 105
+    },
+    {
+      "start_tick": 15346,
+      "end_tick": 15375,
+      "pitch": 81,
+      "velocity": 126
+    },
+    {
+      "start_tick": 15394,
+      "end_tick": 15448,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 15444,
+      "end_tick": 15476,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 15488,
+      "end_tick": 15534,
+      "pitch": 79,
+      "velocity": 117
+    },
+    {
+      "start_tick": 15536,
+      "end_tick": 15580,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 15586,
+      "end_tick": 15678,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 15678,
+      "end_tick": 15705,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 15822,
+      "end_tick": 15836,
+      "pitch": 69,
+      "velocity": 94
+    },
+    {
+      "start_tick": 15870,
+      "end_tick": 15888,
+      "pitch": 69,
+      "velocity": 90
+    },
+    {
+      "start_tick": 15916,
+      "end_tick": 15932,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 15964,
+      "end_tick": 15980,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 16012,
+      "end_tick": 16028,
+      "pitch": 69,
+      "velocity": 117
+    },
+    {
+      "start_tick": 16060,
+      "end_tick": 16076,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 16108,
+      "end_tick": 16120,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 16154,
+      "end_tick": 16169,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 16203,
+      "end_tick": 16219,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 16251,
+      "end_tick": 16264,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 16299,
+      "end_tick": 16313,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 16347,
+      "end_tick": 16368,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 16440,
+      "end_tick": 16461,
+      "pitch": 81,
+      "velocity": 127
+    },
+    {
+      "start_tick": 16584,
+      "end_tick": 16629,
+      "pitch": 81,
+      "velocity": 105
+    },
+    {
+      "start_tick": 16631,
+      "end_tick": 16677,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 16677,
+      "end_tick": 16724,
+      "pitch": 86,
+      "velocity": 111
+    },
+    {
+      "start_tick": 16724,
+      "end_tick": 16771,
+      "pitch": 86,
+      "velocity": 126
+    },
+    {
+      "start_tick": 16775,
+      "end_tick": 16802,
+      "pitch": 81,
+      "velocity": 126
+    },
+    {
+      "start_tick": 16820,
+      "end_tick": 16865,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 16871,
+      "end_tick": 16904,
+      "pitch": 78,
+      "velocity": 126
+    },
+    {
+      "start_tick": 16916,
+      "end_tick": 16952,
+      "pitch": 78,
+      "velocity": 127
+    },
+    {
+      "start_tick": 16963,
+      "end_tick": 16989,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 17011,
+      "end_tick": 17059,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 17053,
+      "end_tick": 17094,
+      "pitch": 84,
+      "velocity": 105
+    },
+    {
+      "start_tick": 17104,
+      "end_tick": 17200,
+      "pitch": 75,
+      "velocity": 94
+    },
+    {
+      "start_tick": 17104,
+      "end_tick": 17200,
+      "pitch": 84,
+      "velocity": 117
+    },
+    {
+      "start_tick": 17200,
+      "end_tick": 17220,
+      "pitch": 74,
+      "velocity": 105
+    },
+    {
+      "start_tick": 17200,
+      "end_tick": 17224,
+      "pitch": 82,
+      "velocity": 126
+    },
+    {
+      "start_tick": 17343,
+      "end_tick": 17372,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 17343,
+      "end_tick": 17373,
+      "pitch": 82,
+      "velocity": 94
+    },
+    {
+      "start_tick": 17343,
+      "end_tick": 17376,
+      "pitch": 79,
+      "velocity": 105
+    },
+    {
+      "start_tick": 17391,
+      "end_tick": 17424,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 17391,
+      "end_tick": 17424,
+      "pitch": 79,
+      "velocity": 94
+    },
+    {
+      "start_tick": 17391,
+      "end_tick": 17424,
+      "pitch": 82,
+      "velocity": 98
+    },
+    {
+      "start_tick": 17439,
+      "end_tick": 17468,
+      "pitch": 82,
+      "velocity": 90
+    },
+    {
+      "start_tick": 17439,
+      "end_tick": 17469,
+      "pitch": 79,
+      "velocity": 98
+    },
+    {
+      "start_tick": 17440,
+      "end_tick": 17461,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 17487,
+      "end_tick": 17533,
+      "pitch": 82,
+      "velocity": 105
+    },
+    {
+      "start_tick": 17487,
+      "end_tick": 17535,
+      "pitch": 79,
+      "velocity": 98
+    },
+    {
+      "start_tick": 17488,
+      "end_tick": 17536,
+      "pitch": 74,
+      "velocity": 111
+    },
+    {
+      "start_tick": 17533,
+      "end_tick": 17556,
+      "pitch": 76,
+      "velocity": 94
+    },
+    {
+      "start_tick": 17533,
+      "end_tick": 17556,
+      "pitch": 73,
+      "velocity": 111
+    },
+    {
+      "start_tick": 17533,
+      "end_tick": 17561,
+      "pitch": 81,
+      "velocity": 94
+    },
+    {
+      "start_tick": 17580,
+      "end_tick": 17613,
+      "pitch": 73,
+      "velocity": 111
+    },
+    {
+      "start_tick": 17580,
+      "end_tick": 17636,
+      "pitch": 76,
+      "velocity": 98
+    },
+    {
+      "start_tick": 17580,
+      "end_tick": 17639,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 17628,
+      "end_tick": 17656,
+      "pitch": 79,
+      "velocity": 105
+    },
+    {
+      "start_tick": 17628,
+      "end_tick": 17656,
+      "pitch": 74,
+      "velocity": 111
+    },
+    {
+      "start_tick": 17629,
+      "end_tick": 17653,
+      "pitch": 70,
+      "velocity": 117
+    },
+    {
+      "start_tick": 17676,
+      "end_tick": 17716,
+      "pitch": 74,
+      "velocity": 111
+    },
+    {
+      "start_tick": 17676,
+      "end_tick": 17721,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 17676,
+      "end_tick": 17731,
+      "pitch": 79,
+      "velocity": 105
+    },
+    {
+      "start_tick": 17724,
+      "end_tick": 17747,
+      "pitch": 77,
+      "velocity": 111
+    },
+    {
+      "start_tick": 17724,
+      "end_tick": 17748,
+      "pitch": 73,
+      "velocity": 94
+    },
+    {
+      "start_tick": 17724,
+      "end_tick": 17748,
+      "pitch": 69,
+      "velocity": 94
+    },
+    {
+      "start_tick": 17771,
+      "end_tick": 17797,
+      "pitch": 77,
+      "velocity": 111
+    },
+    {
+      "start_tick": 17771,
+      "end_tick": 17824,
+      "pitch": 69,
+      "velocity": 105
+    },
+    {
+      "start_tick": 17771,
+      "end_tick": 17828,
+      "pitch": 73,
+      "velocity": 98
+    },
+    {
+      "start_tick": 17819,
+      "end_tick": 17840,
+      "pitch": 67,
+      "velocity": 98
+    },
+    {
+      "start_tick": 17819,
+      "end_tick": 17845,
+      "pitch": 70,
+      "velocity": 105
+    },
+    {
+      "start_tick": 17819,
+      "end_tick": 17849,
+      "pitch": 76,
+      "velocity": 105
+    },
+    {
+      "start_tick": 17867,
+      "end_tick": 17915,
+      "pitch": 67,
+      "velocity": 105
+    },
+    {
+      "start_tick": 17867,
+      "end_tick": 17924,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 17867,
+      "end_tick": 17936,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 17915,
+      "end_tick": 17919,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 17915,
+      "end_tick": 17940,
+      "pitch": 65,
+      "velocity": 105
+    },
+    {
+      "start_tick": 17916,
+      "end_tick": 17936,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 18010,
+      "end_tick": 18032,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 18058,
+      "end_tick": 18108,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 18106,
+      "end_tick": 18132,
+      "pitch": 76,
+      "velocity": 105
+    },
+    {
+      "start_tick": 18154,
+      "end_tick": 18205,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 18202,
+      "end_tick": 18224,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 18248,
+      "end_tick": 18308,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 18296,
+      "end_tick": 18316,
+      "pitch": 73,
+      "velocity": 117
+    },
+    {
+      "start_tick": 18392,
+      "end_tick": 18420,
+      "pitch": 79,
+      "velocity": 126
+    },
+    {
+      "start_tick": 18392,
+      "end_tick": 18424,
+      "pitch": 70,
+      "velocity": 105
+    },
+    {
+      "start_tick": 18440,
+      "end_tick": 18480,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 18440,
+      "end_tick": 18480,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 18486,
+      "end_tick": 18515,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 18486,
+      "end_tick": 18516,
+      "pitch": 69,
+      "velocity": 98
+    },
+    {
+      "start_tick": 18534,
+      "end_tick": 18584,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 18535,
+      "end_tick": 18589,
+      "pitch": 69,
+      "velocity": 94
+    },
+    {
+      "start_tick": 18583,
+      "end_tick": 18627,
+      "pitch": 67,
+      "velocity": 94
+    },
+    {
+      "start_tick": 18583,
+      "end_tick": 18630,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 18630,
+      "end_tick": 18654,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 18632,
+      "end_tick": 18654,
+      "pitch": 65,
+      "velocity": 117
+    },
+    {
+      "start_tick": 18724,
+      "end_tick": 18796,
+      "pitch": 67,
+      "velocity": 98
+    },
+    {
+      "start_tick": 18724,
+      "end_tick": 18816,
+      "pitch": 69,
+      "velocity": 126
+    },
+    {
+      "start_tick": 18820,
+      "end_tick": 18844,
+      "pitch": 65,
+      "velocity": 105
+    },
+    {
+      "start_tick": 18820,
+      "end_tick": 18844,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 20392,
+      "end_tick": 20437,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 20440,
+      "end_tick": 20485,
+      "pitch": 78,
+      "velocity": 105
+    },
+    {
+      "start_tick": 20488,
+      "end_tick": 20533,
+      "pitch": 76,
+      "velocity": 98
+    },
+    {
+      "start_tick": 20533,
+      "end_tick": 20581,
+      "pitch": 75,
+      "velocity": 98
+    },
+    {
+      "start_tick": 20581,
+      "end_tick": 20629,
+      "pitch": 71,
+      "velocity": 105
+    },
+    {
+      "start_tick": 20629,
+      "end_tick": 20676,
+      "pitch": 70,
+      "velocity": 105
+    },
+    {
+      "start_tick": 20677,
+      "end_tick": 20724,
+      "pitch": 71,
+      "velocity": 111
+    },
+    {
+      "start_tick": 20725,
+      "end_tick": 20772,
+      "pitch": 73,
+      "velocity": 98
+    },
+    {
+      "start_tick": 20772,
+      "end_tick": 20820,
+      "pitch": 75,
+      "velocity": 84
+    },
+    {
+      "start_tick": 20820,
+      "end_tick": 20868,
+      "pitch": 76,
+      "velocity": 94
+    },
+    {
+      "start_tick": 20868,
+      "end_tick": 20913,
+      "pitch": 78,
+      "velocity": 94
+    },
+    {
+      "start_tick": 20916,
+      "end_tick": 21009,
+      "pitch": 81,
+      "velocity": 98
+    },
+    {
+      "start_tick": 21010,
+      "end_tick": 21032,
+      "pitch": 79,
+      "velocity": 126
+    },
+    {
+      "start_tick": 21155,
+      "end_tick": 21170,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 21203,
+      "end_tick": 21216,
+      "pitch": 75,
+      "velocity": 105
+    },
+    {
+      "start_tick": 21248,
+      "end_tick": 21266,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 21296,
+      "end_tick": 21314,
+      "pitch": 78,
+      "velocity": 126
+    },
+    {
+      "start_tick": 21392,
+      "end_tick": 21408,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 21535,
+      "end_tick": 21549,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 21583,
+      "end_tick": 21600,
+      "pitch": 76,
+      "velocity": 126
+    },
+    {
+      "start_tick": 21631,
+      "end_tick": 21645,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 21676,
+      "end_tick": 21764,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 21772,
+      "end_tick": 21788,
+      "pitch": 73,
+      "velocity": 117
+    },
+    {
+      "start_tick": 22059,
+      "end_tick": 23363,
+      "pitch": 81,
+      "velocity": 80
+    },
+    {
+      "start_tick": 23440,
+      "end_tick": 23485,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 23488,
+      "end_tick": 23533,
+      "pitch": 78,
+      "velocity": 105
+    },
+    {
+      "start_tick": 23533,
+      "end_tick": 23581,
+      "pitch": 76,
+      "velocity": 98
+    },
+    {
+      "start_tick": 23581,
+      "end_tick": 23629,
+      "pitch": 75,
+      "velocity": 98
+    },
+    {
+      "start_tick": 23629,
+      "end_tick": 23676,
+      "pitch": 71,
+      "velocity": 105
+    },
+    {
+      "start_tick": 23676,
+      "end_tick": 23724,
+      "pitch": 70,
+      "velocity": 105
+    },
+    {
+      "start_tick": 23725,
+      "end_tick": 23772,
+      "pitch": 71,
+      "velocity": 111
+    },
+    {
+      "start_tick": 23772,
+      "end_tick": 23820,
+      "pitch": 73,
+      "velocity": 98
+    },
+    {
+      "start_tick": 23820,
+      "end_tick": 23868,
+      "pitch": 75,
+      "velocity": 84
+    },
+    {
+      "start_tick": 23868,
+      "end_tick": 23916,
+      "pitch": 76,
+      "velocity": 94
+    },
+    {
+      "start_tick": 23916,
+      "end_tick": 23960,
+      "pitch": 78,
+      "velocity": 94
+    },
+    {
+      "start_tick": 23963,
+      "end_tick": 24056,
+      "pitch": 81,
+      "velocity": 98
+    },
+    {
+      "start_tick": 24056,
+      "end_tick": 24080,
+      "pitch": 79,
+      "velocity": 126
+    },
+    {
+      "start_tick": 24200,
+      "end_tick": 24213,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 24247,
+      "end_tick": 24260,
+      "pitch": 75,
+      "velocity": 105
+    },
+    {
+      "start_tick": 24295,
+      "end_tick": 24312,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 24343,
+      "end_tick": 24360,
+      "pitch": 78,
+      "velocity": 126
+    },
+    {
+      "start_tick": 24391,
+      "end_tick": 24410,
+      "pitch": 76,
+      "velocity": 117
+    },
+    {
+      "start_tick": 24436,
+      "end_tick": 24453,
+      "pitch": 76,
+      "velocity": 117
+    },
+    {
+      "start_tick": 24484,
+      "end_tick": 24501,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 24532,
+      "end_tick": 24548,
+      "pitch": 73,
+      "velocity": 111
+    },
+    {
+      "start_tick": 24580,
+      "end_tick": 24597,
+      "pitch": 69,
+      "velocity": 105
+    },
+    {
+      "start_tick": 24628,
+      "end_tick": 24644,
+      "pitch": 73,
+      "velocity": 126
+    },
+    {
+      "start_tick": 24675,
+      "end_tick": 24693,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 24723,
+      "end_tick": 24736,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 24724,
+      "end_tick": 24736,
+      "pitch": 62,
+      "velocity": 126
+    },
+    {
+      "start_tick": 24820,
+      "end_tick": 24894,
+      "pitch": 69,
+      "velocity": 126
+    },
+    {
+      "start_tick": 24824,
+      "end_tick": 24900,
+      "pitch": 61,
+      "velocity": 111
+    },
+    {
+      "start_tick": 24912,
+      "end_tick": 24923,
+      "pitch": 62,
+      "velocity": 117
+    },
+    {
+      "start_tick": 24912,
+      "end_tick": 24927,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 24962,
+      "end_tick": 24976,
+      "pitch": 69,
+      "velocity": 94
+    },
+    {
+      "start_tick": 25010,
+      "end_tick": 25027,
+      "pitch": 69,
+      "velocity": 90
+    },
+    {
+      "start_tick": 25058,
+      "end_tick": 25072,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 25106,
+      "end_tick": 25120,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 25152,
+      "end_tick": 25168,
+      "pitch": 69,
+      "velocity": 117
+    },
+    {
+      "start_tick": 25200,
+      "end_tick": 25215,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 25248,
+      "end_tick": 25260,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 25296,
+      "end_tick": 25309,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 25344,
+      "end_tick": 25360,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 25389,
+      "end_tick": 25405,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 25437,
+      "end_tick": 25452,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 25485,
+      "end_tick": 25508,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 25581,
+      "end_tick": 25604,
+      "pitch": 81,
+      "velocity": 127
+    },
+    {
+      "start_tick": 25724,
+      "end_tick": 25769,
+      "pitch": 81,
+      "velocity": 105
+    },
+    {
+      "start_tick": 25772,
+      "end_tick": 25817,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 25817,
+      "end_tick": 25865,
+      "pitch": 86,
+      "velocity": 111
+    },
+    {
+      "start_tick": 25865,
+      "end_tick": 25913,
+      "pitch": 86,
+      "velocity": 111
+    },
+    {
+      "start_tick": 25913,
+      "end_tick": 25961,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 25961,
+      "end_tick": 26008,
+      "pitch": 81,
+      "velocity": 105
+    },
+    {
+      "start_tick": 26009,
+      "end_tick": 26056,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 26056,
+      "end_tick": 26104,
+      "pitch": 77,
+      "velocity": 98
+    },
+    {
+      "start_tick": 26104,
+      "end_tick": 26152,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 26152,
+      "end_tick": 26197,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 26200,
+      "end_tick": 26245,
+      "pitch": 77,
+      "velocity": 111
+    },
+    {
+      "start_tick": 26248,
+      "end_tick": 26341,
+      "pitch": 68,
+      "velocity": 111
+    },
+    {
+      "start_tick": 26248,
+      "end_tick": 26341,
+      "pitch": 77,
+      "velocity": 117
+    },
+    {
+      "start_tick": 26341,
+      "end_tick": 26364,
+      "pitch": 69,
+      "velocity": 117
+    },
+    {
+      "start_tick": 26343,
+      "end_tick": 26364,
+      "pitch": 76,
+      "velocity": 117
+    },
+    {
+      "start_tick": 26487,
+      "end_tick": 26500,
+      "pitch": 69,
+      "velocity": 98
+    },
+    {
+      "start_tick": 26532,
+      "end_tick": 26550,
+      "pitch": 69,
+      "velocity": 105
+    },
+    {
+      "start_tick": 26580,
+      "end_tick": 26596,
+      "pitch": 70,
+      "velocity": 126
+    },
+    {
+      "start_tick": 26628,
+      "end_tick": 26644,
+      "pitch": 70,
+      "velocity": 111
+    },
+    {
+      "start_tick": 26676,
+      "end_tick": 26692,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 26724,
+      "end_tick": 26738,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 26771,
+      "end_tick": 26786,
+      "pitch": 73,
+      "velocity": 111
+    },
+    {
+      "start_tick": 26819,
+      "end_tick": 26834,
+      "pitch": 73,
+      "velocity": 126
+    },
+    {
+      "start_tick": 26867,
+      "end_tick": 26880,
+      "pitch": 76,
+      "velocity": 126
+    },
+    {
+      "start_tick": 26915,
+      "end_tick": 26932,
+      "pitch": 76,
+      "velocity": 126
+    },
+    {
+      "start_tick": 26963,
+      "end_tick": 26976,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 27008,
+      "end_tick": 27064,
+      "pitch": 82,
+      "velocity": 126
+    },
+    {
+      "start_tick": 27063,
+      "end_tick": 27088,
+      "pitch": 84,
+      "velocity": 90
+    },
+    {
+      "start_tick": 27084,
+      "end_tick": 27103,
+      "pitch": 82,
+      "velocity": 117
+    },
+    {
+      "start_tick": 27104,
+      "end_tick": 27122,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 27248,
+      "end_tick": 27280,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 27295,
+      "end_tick": 27344,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 27344,
+      "end_tick": 27377,
+      "pitch": 88,
+      "velocity": 111
+    },
+    {
+      "start_tick": 27392,
+      "end_tick": 27436,
+      "pitch": 88,
+      "velocity": 126
+    },
+    {
+      "start_tick": 27438,
+      "end_tick": 27469,
+      "pitch": 85,
+      "velocity": 111
+    },
+    {
+      "start_tick": 27484,
+      "end_tick": 27540,
+      "pitch": 85,
+      "velocity": 105
+    },
+    {
+      "start_tick": 27534,
+      "end_tick": 27561,
+      "pitch": 81,
+      "velocity": 126
+    },
+    {
+      "start_tick": 27580,
+      "end_tick": 27635,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 27632,
+      "end_tick": 27664,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 27676,
+      "end_tick": 27722,
+      "pitch": 79,
+      "velocity": 117
+    },
+    {
+      "start_tick": 27724,
+      "end_tick": 27768,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 27774,
+      "end_tick": 27868,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 27868,
+      "end_tick": 27894,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 28010,
+      "end_tick": 28024,
+      "pitch": 69,
+      "velocity": 94
+    },
+    {
+      "start_tick": 28058,
+      "end_tick": 28075,
+      "pitch": 69,
+      "velocity": 90
+    },
+    {
+      "start_tick": 28106,
+      "end_tick": 28119,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 28152,
+      "end_tick": 28168,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 28200,
+      "end_tick": 28215,
+      "pitch": 69,
+      "velocity": 117
+    },
+    {
+      "start_tick": 28248,
+      "end_tick": 28264,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 28296,
+      "end_tick": 28308,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 28344,
+      "end_tick": 28357,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 28389,
+      "end_tick": 28408,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 28437,
+      "end_tick": 28452,
+      "pitch": 77,
+      "velocity": 126
+    },
+    {
+      "start_tick": 28485,
+      "end_tick": 28501,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 28533,
+      "end_tick": 28557,
+      "pitch": 82,
+      "velocity": 127
+    },
+    {
+      "start_tick": 28628,
+      "end_tick": 28652,
+      "pitch": 81,
+      "velocity": 127
+    },
+    {
+      "start_tick": 28772,
+      "end_tick": 28817,
+      "pitch": 81,
+      "velocity": 105
+    },
+    {
+      "start_tick": 28819,
+      "end_tick": 28865,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 28865,
+      "end_tick": 28915,
+      "pitch": 86,
+      "velocity": 111
+    },
+    {
+      "start_tick": 28915,
+      "end_tick": 28960,
+      "pitch": 86,
+      "velocity": 126
+    },
+    {
+      "start_tick": 28965,
+      "end_tick": 28992,
+      "pitch": 81,
+      "velocity": 126
+    },
+    {
+      "start_tick": 29009,
+      "end_tick": 29055,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 29060,
+      "end_tick": 29092,
+      "pitch": 78,
+      "velocity": 126
+    },
+    {
+      "start_tick": 29104,
+      "end_tick": 29140,
+      "pitch": 78,
+      "velocity": 127
+    },
+    {
+      "start_tick": 29152,
+      "end_tick": 29180,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 29200,
+      "end_tick": 29248,
+      "pitch": 81,
+      "velocity": 117
+    },
+    {
+      "start_tick": 29244,
+      "end_tick": 29283,
+      "pitch": 84,
+      "velocity": 105
+    },
+    {
+      "start_tick": 29293,
+      "end_tick": 29388,
+      "pitch": 75,
+      "velocity": 94
+    },
+    {
+      "start_tick": 29295,
+      "end_tick": 29389,
+      "pitch": 84,
+      "velocity": 117
+    },
+    {
+      "start_tick": 29389,
+      "end_tick": 29409,
+      "pitch": 74,
+      "velocity": 105
+    },
+    {
+      "start_tick": 29389,
+      "end_tick": 29413,
+      "pitch": 82,
+      "velocity": 126
+    },
+    {
+      "start_tick": 29532,
+      "end_tick": 29561,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 29532,
+      "end_tick": 29564,
+      "pitch": 82,
+      "velocity": 94
+    },
+    {
+      "start_tick": 29532,
+      "end_tick": 29564,
+      "pitch": 79,
+      "velocity": 105
+    },
+    {
+      "start_tick": 29580,
+      "end_tick": 29612,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 29580,
+      "end_tick": 29612,
+      "pitch": 82,
+      "velocity": 98
+    },
+    {
+      "start_tick": 29580,
+      "end_tick": 29613,
+      "pitch": 79,
+      "velocity": 94
+    },
+    {
+      "start_tick": 29628,
+      "end_tick": 29652,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 29628,
+      "end_tick": 29657,
+      "pitch": 82,
+      "velocity": 90
+    },
+    {
+      "start_tick": 29628,
+      "end_tick": 29660,
+      "pitch": 79,
+      "velocity": 98
+    },
+    {
+      "start_tick": 29676,
+      "end_tick": 29724,
+      "pitch": 79,
+      "velocity": 98
+    },
+    {
+      "start_tick": 29676,
+      "end_tick": 29724,
+      "pitch": 82,
+      "velocity": 105
+    },
+    {
+      "start_tick": 29676,
+      "end_tick": 29725,
+      "pitch": 74,
+      "velocity": 111
+    },
+    {
+      "start_tick": 29724,
+      "end_tick": 29748,
+      "pitch": 76,
+      "velocity": 94
+    },
+    {
+      "start_tick": 29724,
+      "end_tick": 29748,
+      "pitch": 73,
+      "velocity": 111
+    },
+    {
+      "start_tick": 29724,
+      "end_tick": 29752,
+      "pitch": 81,
+      "velocity": 94
+    },
+    {
+      "start_tick": 29771,
+      "end_tick": 29804,
+      "pitch": 73,
+      "velocity": 111
+    },
+    {
+      "start_tick": 29771,
+      "end_tick": 29827,
+      "pitch": 76,
+      "velocity": 98
+    },
+    {
+      "start_tick": 29771,
+      "end_tick": 29828,
+      "pitch": 81,
+      "velocity": 111
+    },
+    {
+      "start_tick": 29819,
+      "end_tick": 29844,
+      "pitch": 74,
+      "velocity": 111
+    },
+    {
+      "start_tick": 29819,
+      "end_tick": 29845,
+      "pitch": 79,
+      "velocity": 105
+    },
+    {
+      "start_tick": 29819,
+      "end_tick": 29845,
+      "pitch": 70,
+      "velocity": 117
+    },
+    {
+      "start_tick": 29867,
+      "end_tick": 29906,
+      "pitch": 74,
+      "velocity": 111
+    },
+    {
+      "start_tick": 29867,
+      "end_tick": 29912,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 29867,
+      "end_tick": 29920,
+      "pitch": 79,
+      "velocity": 105
+    },
+    {
+      "start_tick": 29915,
+      "end_tick": 29936,
+      "pitch": 77,
+      "velocity": 111
+    },
+    {
+      "start_tick": 29915,
+      "end_tick": 29936,
+      "pitch": 69,
+      "velocity": 94
+    },
+    {
+      "start_tick": 29915,
+      "end_tick": 29940,
+      "pitch": 73,
+      "velocity": 94
+    },
+    {
+      "start_tick": 29963,
+      "end_tick": 29988,
+      "pitch": 77,
+      "velocity": 111
+    },
+    {
+      "start_tick": 29963,
+      "end_tick": 30015,
+      "pitch": 69,
+      "velocity": 105
+    },
+    {
+      "start_tick": 29963,
+      "end_tick": 30019,
+      "pitch": 73,
+      "velocity": 98
+    },
+    {
+      "start_tick": 30008,
+      "end_tick": 30030,
+      "pitch": 67,
+      "velocity": 98
+    },
+    {
+      "start_tick": 30008,
+      "end_tick": 30036,
+      "pitch": 70,
+      "velocity": 105
+    },
+    {
+      "start_tick": 30008,
+      "end_tick": 30039,
+      "pitch": 76,
+      "velocity": 105
+    },
+    {
+      "start_tick": 30058,
+      "end_tick": 30104,
+      "pitch": 67,
+      "velocity": 105
+    },
+    {
+      "start_tick": 30058,
+      "end_tick": 30112,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 30058,
+      "end_tick": 30126,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 30104,
+      "end_tick": 30108,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 30104,
+      "end_tick": 30126,
+      "pitch": 69,
+      "velocity": 111
+    },
+    {
+      "start_tick": 30104,
+      "end_tick": 30129,
+      "pitch": 65,
+      "velocity": 105
+    },
+    {
+      "start_tick": 30200,
+      "end_tick": 30222,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 30248,
+      "end_tick": 30296,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 30296,
+      "end_tick": 30321,
+      "pitch": 76,
+      "velocity": 105
+    },
+    {
+      "start_tick": 30344,
+      "end_tick": 30396,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 30392,
+      "end_tick": 30412,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 30438,
+      "end_tick": 30496,
+      "pitch": 74,
+      "velocity": 117
+    },
+    {
+      "start_tick": 30486,
+      "end_tick": 30504,
+      "pitch": 73,
+      "velocity": 117
+    },
+    {
+      "start_tick": 30582,
+      "end_tick": 30609,
+      "pitch": 79,
+      "velocity": 126
+    },
+    {
+      "start_tick": 30582,
+      "end_tick": 30616,
+      "pitch": 70,
+      "velocity": 105
+    },
+    {
+      "start_tick": 30628,
+      "end_tick": 30669,
+      "pitch": 70,
+      "velocity": 98
+    },
+    {
+      "start_tick": 30628,
+      "end_tick": 30669,
+      "pitch": 79,
+      "velocity": 111
+    },
+    {
+      "start_tick": 30675,
+      "end_tick": 30704,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 30675,
+      "end_tick": 30708,
+      "pitch": 69,
+      "velocity": 98
+    },
+    {
+      "start_tick": 30723,
+      "end_tick": 30772,
+      "pitch": 77,
+      "velocity": 105
+    },
+    {
+      "start_tick": 30724,
+      "end_tick": 30780,
+      "pitch": 69,
+      "velocity": 94
+    },
+    {
+      "start_tick": 30772,
+      "end_tick": 30816,
+      "pitch": 67,
+      "velocity": 94
+    },
+    {
+      "start_tick": 30772,
+      "end_tick": 30820,
+      "pitch": 76,
+      "velocity": 111
+    },
+    {
+      "start_tick": 30820,
+      "end_tick": 30843,
+      "pitch": 65,
+      "velocity": 117
+    },
+    {
+      "start_tick": 30820,
+      "end_tick": 30843,
+      "pitch": 74,
+      "velocity": 126
+    },
+    {
+      "start_tick": 30914,
+      "end_tick": 30984,
+      "pitch": 67,
+      "velocity": 98
+    },
+    {
+      "start_tick": 30914,
+      "end_tick": 31010,
+      "pitch": 69,
+      "velocity": 126
+    },
+    {
+      "start_tick": 31010,
+      "end_tick": 31032,
+      "pitch": 65,
+      "velocity": 105
+    },
+    {
+      "start_tick": 31010,
+      "end_tick": 31032,
+      "pitch": 74,
+      "velocity": 126
+    }
+  ]
+}
