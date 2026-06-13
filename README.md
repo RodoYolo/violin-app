@@ -60,7 +60,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 
 # install dependencies
-pip install django numpy scipy mido music21 requests beautifulsoup4
+pip install -r requirements.txt
 
 # run migrations and start the dev server
 python manage.py migrate
